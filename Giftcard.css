@@ -1,4 +1,26 @@
 .navbar{
-    background: #FCF3CF;
+    background: #ffcd06;
+    }
+    body{
+        background-image: none;
+        width: auto;
+        height: auto;
+        
+    }
+    .productnam{
+        word-wrap: break-word;
+        margin-bottom: 15px;
+        text-align: center;
+        display: block;
+        padding: 0px 10px 35px;
+    }
+    .h1{
+        font-weight: 500;
+        line-height: 2.2;
+        font-size:xxx-large;
+    } 
+    .giftcard{
+        box-sizing:content-box;
+        margin: 350px;
     }
     
