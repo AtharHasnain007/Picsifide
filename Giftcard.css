@@ -1,26 +1,45 @@
-.navbar{
+.navbar
+{
     background: #ffcd06;
     }
-    body{
-        background-image: none;
-        width: auto;
-        height: auto;
+    body
+    {
+        -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeSpeed;
+    font-family: var(--typeBasePrimary), var(--typeBaseFallback);
+    font-size: calc(var(--typeBaseSize) * 0.85);
+    font-weight: var(--typeBaseWeight);
+    font-style: var(--typeBaseStyle);
+    letter-spacing: var(--typeBaseSpacing);
+    line-height: var(--typeBaseLineHeight);
         
     }
-    .productnam{
+    .productnam
+    {
         word-wrap: break-word;
         margin-bottom: 15px;
         text-align: center;
         display: block;
         padding: 0px 10px 35px;
     }
-    .h1{
+    .h1
+    {
         font-weight: 500;
         line-height: 2.2;
         font-size:xxx-large;
     } 
-    .giftcard{
+    .giftcard
+    {
         box-sizing:content-box;
         margin: 350px;
     }
-    
+    *, :after :before, input
+    {
+        box-sizing: border-box;
+    }
+.page-content
+{
+padding-top: 30px;
+padding-bottom: 30px;
+}
