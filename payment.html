@@ -66,83 +66,102 @@
                     </div>
                 </div>
                 <div class="rounded-2 px-5 pb-3 bg-white">
-                    <div class="row mt-3">
-                        <button class="btn btn-light my-2 h6 pt-4 pb-3 mb-1 text-center fs-5 fw-semibold d-inline"
-                            type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2"
-                            aria-expanded="false" aria-controls="multiCollapseExample2">Pay with Credit Card</button>
-                        <div class="col">
-                            <div class="collapse multi-collapse" id="multiCollapseExample2">
-                                <div class="card card-body">
-                                    <div class="row mt-2">
-                                        <p><small>We accept following credit cards:&nbsp;&nbsp;<img
-                                                    class="d-inline-block align-middle" src="imgs\cards.png" width="187"
-                                                    alt="Cerdit Cards"><small></p>
-                                    </div>
-                                    <hr>
-                                    <div class="row">
-                                        <label class="mb-2 fs-5 fw-semibold">Details</label>
-                                        <div class="col-sm-6">
-                                            <div class="mb-3">
-                                                <input class="form-control" type="text" id="checkout-cd"
-                                                    placeholder="Card Number">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="mb-3">
-                                                <input class="form-control" type="text" id="checkout-fn"
-                                                    placeholder="Full Name">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="mb-3">
-                                                <input class="form-control" type="text" id="checkout-my"
-                                                    placeholder="MM//YY">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="mb-3">
-                                                <input class="form-control" type="text" id="checkout-cvc"
-                                                    placeholder="CVC">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                    <h2 class="row mt-2 h6 pt-4 mb-1 text-center fs-5 fw-semibold">Pay with Credit Card</h2>
+                    <hr>
+                    <div class="row">
+                        <p><small>We accept following credit cards:&nbsp;&nbsp;<img class="d-inline-block align-middle"
+                                    src="imgs\cards.png" width="187" alt="Cerdit Cards"><small></p>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <label class="mb-2 fs-5 fw-semibold">Details</label>
+                        <div class="col-sm-6">
+                            <div class="mb-3">
+                                <input class="form-control" type="text" id="checkout-cd" placeholder="Card Number">
                             </div>
                         </div>
-                        <hr>
-                        <div class="row">
-                            <button class="btn btn-light my-2 h6 pt-4 pb-3 mb-1 text-center fs-5 fw-semibold d-inline"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#paypal" aria-expanded="false"
-                                aria-controls="paypal">Pay with PayPal</button>
-                        </div>
-                        <div class="col">
-                            <div class="collapse multi-collapse" id="paypal">
-                                <div class="card card-body">
-                                    <div class="row">
-                                        <label class="mb-2 fs-6 fw-semibold">Log In</label>
-                                        <div class="col-sm-6">
-                                            <div class="mb-3">
-                                                <input class="form-control" type="text" id="checkout-email"
-                                                    placeholder="Email">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="mb-3">
-                                                <input class="form-control" type="text" id="checkout-login"
-                                                    placeholder="Password">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="col-sm-6">
+                            <div class="mb-3">
+                                <input class="form-control" type="text" id="checkout-fn" placeholder="Full Name">
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="mb-3">
+                                <input class="form-control" type="text" id="checkout-my" placeholder="MM//YY">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="mb-3">
+                                <input class="form-control" type="text" id="checkout-cvc" placeholder="CVC">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2 h6 pt-4 mb-1 d-flex justify-content-center fs-4 fw-bold">OR</div>
+                    <hr>
+                    <div class="row">
+                        <h2 class="row mt-2 h6 pt-4 mb-1 text-center fs-5 fw-semibold">Pay
+                            with PayPal</h2>
+                        <hr>
+                    </div>
+                    <div class="row">
+                        <label class="mb-2 fs-6 fw-semibold">Log In</label>
+                        <div class="col-sm-6">
+                            <div class="mb-3">
+                                <input class="form-control" type="text" id="checkout-email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="mb-3">
+                                <input class="form-control" type="text" id="checkout-login" placeholder="Password">
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
                 </div>
             </div>
+            <div class="col-5">
+                <div class="bg-white rounded-3 shadow-lg p-4 my-4 ms-5 text-center">
+                    <h2 class="h6 mb-3 pb-1 fw-semibold fs-3">Order Summary</h2>
+                    <hr>
+                    <div class="row">
+                        <div class="col-9"><img src="imgs\create3.png" style="height: 10em;"></div>
+                        <div class="col-3 d-flex align-items-center">$65.00</div>
+                    </div>
+                    <div class="row d-flex justify-content-center">cart items will be here</div>
+                    <hr>
+                    <div class="row mt-4">
+                        <li class="d-flex justify-content-between align-items-center"><span
+                                class="me-2">Shipping:</span><span class="text-end">$26.<small>50</small></span></li>
+                    </div>
+                    <div class="row my-1">
+                        <li class="d-flex justify-content-between align-items-center"><span
+                                class="me-2">Taxes:</span><span class="text-end">$9.<small>50</small></span></li>
+                    </div>
+                    <hr>
+                    <div class="row my-4">
+                        <div class="col-9">
+                            <input class="form-control" type="text" id="checkout-reduction-code"
+                                placeholder="Gift Card or Promo Code">
+                        </div>
+                        <div class="col-3"><button type="button" class="btn btn-secondary">Apply</button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <span>
+                            <h2 class="h6 mb-3 mx-3 pb-1 fw-semibold fs-3 d-inline">Total:</h2>
+                            <h3 class="fw-normal d-inline">$93.<small>00</small></h3>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </div>
+
 </body>
 
 </html>
