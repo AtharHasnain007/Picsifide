@@ -67,14 +67,14 @@
                 <div class="row">
                     <label class="d-block text-start">Orientation</label>
                     <div class="col-12">
-                        <div class="form-check form-check-inline" onclick="document.getElementById('myImage').src='imgs/create1.png'">
+                        <div class="form-check form-check-inline" onclick="Orientationvert()">
                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                             <label class="form-check-label" for="flexRadioDefault1">
                                 <img src="https://doshopify.com/product-personalizer/images/picsifiedww.myshopify.com/POSTER-VERTICAL.png?v=123"
                                     height="125em">
                             </label>
                         </div>
-                        <div class="form-check form-check-inline">
+                        <div class="form-check form-check-inline" onclick="Orientationhoriz()">
                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
                                 checked>
                             <label class="form-check-label" for="flexRadioDefault2">
@@ -203,9 +203,11 @@
         </div>
       </footer>
       <script>
-        function abc(){
-            alert("kcjeb");
-            ;
+        function Orientationvert(){
+            document.getElementById('myImage').src='imgs/POSTER-VERTICAL.png';
+        }
+        function Orientationhoriz(){
+            document.getElementById('myImage').src='imgs/POSTER-HORIZONTAL.png';
         }
       </script>
 </body>
