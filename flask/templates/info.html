@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body style="background-color:#e8dada;">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <nav class="navbar navbar-expand-sm sticky-top" style="background-color: #d8c3c3;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="imgs\logo.webp"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 fs-5">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Giftcard.html">Gift Card</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Help
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">FAQs</a></li>
+              <li><a class="dropdown-item" href="create.html">Upload Pics</a></li>
+              <li><a class="dropdown-item" href="#contact">Contact Us</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-lg text-center">
+    <div class="row mt-5 text-start">
+      <div class="col-lg-7 col-md-12">
+        <div class="row border-bottom border-secondary">
+          <div class="col-md-8 col-sm-6">
+            <h2 class="h6 pt-4 pb-3 mb-3  text-start fs-3 fw-semibold d-inline">Information
+            </h2>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">Home</li>
+                <li class="breadcrumb-item">Create</li>
+                <li class="breadcrumb-item active" aria-current="page">Information</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <div class="bg-white rounded-3 py-3 px-5 m-2">
+          <div class="row mt-2">
+            <label class="mb-2">Name</label>
+            <div class="col-sm-6">
+              <div class="mb-3">
+                <input class="form-control" type="text" id="checkout-fn" placeholder="First Name">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="mb-3">
+                <input class="form-control" type="text" id="checkout-ln" placeholder="Last Name">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <label class="mb-2">Contact</label>
+            <div class="col-sm-6">
+              <div class="mb-3">
+                <input class="form-control" type="email" id="checkout-email" placeholder="Email">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="mb-3">
+                <input class="form-control" type="text" id="checkout-phone" placeholder="Phone Number">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="mb-3">
+                <label class="form-label" for="checkout-country">Country</label>
+                <select class="form-select" id="checkout-country">
+                  <option>Choose country</option>
+                  <option>Australia</option>
+                  <option>Canada</option>
+                  <option>France</option>
+                  <option>Germany</option>
+                  <option>Switzerland</option>
+                  <option>USA</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="mb-3">
+                <label class="form-label" for="checkout-city">City</label>
+                <select class="form-select" id="checkout-city">
+                  <option>Choose city</option>
+                  <option>Amsterdam</option>
+                  <option>Berlin</option>
+                  <option>Geneve</option>
+                  <option>New York</option>
+                  <option>Paris</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="mb-3">
+              <label class="form-label" for="checkout-address-1">Address</label>
+              <input class="form-control" type="text" id="checkout-address-1"
+                placeholder="House no, Street no, Area/District...">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="mb-3">
+                <label class="mb-2">Details</label>
+                <input class="form-control" type="text" id="checkout-address-2"
+                  placeholder="Apartment, Suite, etc... (Optional)">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="mb-3">
+                <label class="form-label" for="checkout-zip">ZIP Code</label>
+                <input class="form-control" type="text" id="checkout-zip">
+              </div>
+            </div>
+          </div>
+          <h6 class="border-bottom">Billing address</h6>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" checked="" id="same-address">
+            <label class="form-check-label" for="same-address">Same as shipping address</label>
+          </div><br>
+          <div class="row my-2">
+            <div class="col-6 w-50 pe-3"><a class="btn btn-outline-dark d-block w-100" href="create.html">Back to
+                Create</a>
+            </div>
+            <div class="col-6 w-50 ps-2"><a class="btn btn-dark d-block w-100" href="shipping.html">Proceed to
+                Shipping</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-12">
+        <div class="bg-white rounded-3 shadow-lg p-4 m-4 text-center">
+          <h2 class="h6 mb-3 pb-1 fw-semibold fs-3">Subtotal</h2>
+          <h3 class="fw-normal">$65.<small>00</small></h3>
+          <hr>
+          <div class="row">
+            <div class="col-9"><img src="imgs\create3.png" style="height: 10em;"></div>
+            <div class="col-3 d-flex align-items-center">$65.00</div>
+          </div><hr>
+          <div class="row my-2">
+            <div class="col-9">
+              <input class="form-control" type="text" id="checkout-reduction-code"
+                placeholder="Gift Card or Promo Code">
+            </div>
+            <div class="col-3"><button type="button" class="btn btn-outline-dark">Apply</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="py-5 mt-5" style="background-color:#d8c3c3;">
+    <div class="row mx-5">
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+
+      <div id=contact class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <h5 class="fs-4 fw-semibold">Contact Us</h5><hr>
+          <p>Hey 👋🏻 If you have any questions regarding delivery times, production, shipments, creation processes, or general questions about the product, you can ask us here!</p>
+          <div class="d-block w-100 gap-2">
+            <input id="contactemail" type="text" class="form-control" placeholder="Email address"><br>
+            <input id="name" type="text" class="form-control" placeholder="Name"><br>
+            <input id="orderno" type="text" class="form-control" placeholder="Order No."><br>
+            <input id="subject" type="text" class="form-control" placeholder="Subject"><br>
+            <textarea id="orderno" type="text" class="form-control" placeholder="Message"></textarea><br>
+            <button class="btn btn-dark" type="button">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-center py-4 my-4 border-top">
+      <p>© 2022 Company, Inc. All rights reserved.</p>
+      <ul class="list-unstyled d-flex">
+        <li class="ms-3"><a class="link-dark" href="#"><img class="bi" width="24" height="24" src="imgs/fb.png"></a></li>
+        <li class="ms-3"><a class="link-dark" href="#"><img class="bi" width="24" height="24" src="imgs/insta.jfif"></a></li>
+        <li class="ms-3"><a class="link-dark" href="#"><img class="bi" width="24" height="24" src="imgs/twit.png"></a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
