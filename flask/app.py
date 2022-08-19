@@ -9,9 +9,10 @@ db = SQLAlchemy(app)
 
 
 class Picsifid(db.Model):
+    Sno = db.Column(db.Integer, primary_key=True)
     Address = db.Column(db.String(500), nullable=False)
     Name = db.Column(db.String(200), nullable=False)
-    OrderNo = db.Column(db.Integer, primary_key=True)
+    OrderNo = db.Column(db.Integer)
     Subject = db.Column(db.String(500), nullable=False)
     Message = db.Column(db.String(500), nullable=False)
     date_created = db.Column(db.DateTime, default=datetime.utcnow)
